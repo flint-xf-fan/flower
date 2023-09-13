@@ -1,11 +1,11 @@
 ---
-title: title of the paper
-url: URL to the paper page (not the pdf)
-labels: [label1, label2] # please add between 4 and 10 single-word (maybe two-words) labels (e.g. "system heterogeneity", "image classification", "asynchronous", "weight sharing", "cross-silo")
-dataset: [dataset1, dataset2] # list of datasets you include in your baseline
+title: Fault-Tolerant Federated Reinforcement Learning with Theoretical Guarantee
+url: https://arxiv.org/abs/2110.14074
+labels: ["reinforcement learning", "policy gradients"] 
+dataset: [NIL] 
 ---
 
-# :warning:*_Title of your baseline_*
+# Fault-Tolerant Federated Reinforcement Learning with Theoretical Guarantee
 
 > Note: If you use this baseline in your work, please remember to cite the original authors of the paper as well as the Flower paper.
 
