@@ -20,13 +20,17 @@ dataset: [NIL]
 
 ## About this baseline
 
-****What’s implemented:**** The code in this directory replicates the experiments in Federated Optimization in Heterogeneous Networks (Li et al., 2018) for MNIST, which proposed the FedProx algorithm. Concretely, it replicates the results for MNIST in Figure 1 and 7.
+****What’s implemented:**** The code in this directory replicates the experiments in TODO
 
-****Datasets:**** :warning: *_List the datasets you used (if you used a medium to large dataset, >10GB please also include the sizes of the dataset)._*
+****Datasets:**** TODO.. This baseline uses OpenAI gym blahblah...
 
 ****Hardware Setup:**** :warning: *_Give some details about the hardware (e.g. a server with 8x V100 32GB and 256GB of RAM) you used to run the experiments for this baseline. Someone out there might not have access to the same resources you have so, could list the absolute minimum hardware needed to run the experiment in a reasonable amount of time ? (e.g. minimum is 1x 16GB GPU otherwise a client model can’t be trained with a sufficiently large batch size). Could you test this works too?_*
 
 ****Contributors:**** :warning: *_let the world know who contributed to this baseline. This could be either your name, your name and affiliation at the time, or your GitHub profile name if you prefer. If multiple contributors signed up for this baseline, please list yourself and your colleagues_*
+
+- Flint Xiaofeng Fan, @flint-xf-fan, National University of Singapore
+
+- Yining Ma, @yining043, National University of Singapore
 
 
 ## Experimental Setup
