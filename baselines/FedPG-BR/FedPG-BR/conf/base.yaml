@@ -4,14 +4,31 @@
 # a similar configuration structure and hence be easy to customise)
 
 dataset:
-  # dataset config
-
+  env: 'CartPole-v1' # 'OpenAI Gym env name for test')
+  
 model:
   # model config
+  hidden_units: '16,16'
+  activation: 'ReLU'
+  output_activation: 'Tanh'
 
-strategy:
-  _target_: # points to your strategy (either custom or exiting in Flower)
+train:
+  _target_: 'custom' # points to your strategy (either custom or exiting in Flower)
   # rest of strategy config
-
+  lr_model: 1e-3 # learning rate
+  minibatch_size_b: 4
+  number_of_loop_N: 3 # N in inner loop
+  batch_size_B: 16
+  batch_size_Bmin: 12
+  batch_size_Bmax: 20
+  max_epi_len: 500 # Task-Specified Hyperparameters
+  max_trajectories: 5000 # Task-Specified Hyperparameters
+  gamma : 0.999 # Task-Specified Hyperparameters
+  val_size: 10 # 'Number of episoid used for reporting validation performance'
+  val_max_steps: 1000 # 'Maximum trajectory length used for reporting validation performance'
+  device: 'cpu'
+  
 client:
   # client config
+  num_worker: 10 # 'number of client node'
+  num_cpus: 1

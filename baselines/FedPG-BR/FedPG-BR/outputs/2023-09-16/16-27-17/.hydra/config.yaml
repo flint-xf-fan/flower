@@ -1,0 +1,23 @@
+dataset:
+  env: CartPole-v1
+model:
+  hidden_units: 16,16
+  activation: ReLU
+  output_activation: Tanh
+train:
+  _target_: custom
+  lr_model: 0.001
+  minibatch_size_b: 4
+  number_of_loop_N: 3
+  batch_size_B: 16
+  batch_size_Bmin: 12
+  batch_size_Bmax: 20
+  max_epi_len: 500
+  max_trajectories: 5000
+  gamma: 0.999
+  val_size: 10
+  val_max_steps: 1000
+  device: cpu
+client:
+  num_worker: 10
+  num_cpus: 1
